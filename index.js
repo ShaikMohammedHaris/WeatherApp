@@ -4,7 +4,7 @@ function dateformat(timestamp) {
   });
 }
   async function fetchAqi(lat,lon) {
-    let aqiFetch = await fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=83b28e5bd7624fcb8c8cce141cbfabe1`);
+    let aqiFetch = await fetch(`https://api.openweathermap.org/data/2.5/air_pollution?lat=${lat}&lon=${lon}&appid=${your_apiKey}`);
     let aqiFormat = await aqiFetch.json();
     //console.log('aqi data',aqiFormat);
     let list = aqiFormat.list[0].components;
@@ -25,7 +25,7 @@ function dateformat(timestamp) {
       
   }
   async function nextFive(lat,lon) {
-    let nextFetch = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=83b28e5bd7624fcb8c8cce141cbfabe1&units=metric`);
+    let nextFetch = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${your_apiKey}&units=metric`);
     let nextFormat = await nextFetch.json();
     console.log("next five",nextFormat);
     
@@ -33,7 +33,7 @@ function dateformat(timestamp) {
   async function fetchData(){
     let city = document.querySelector(".inputfield").value;
     
-    let a = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=83b28e5bd7624fcb8c8cce141cbfabe1&units=metric`);
+    let a = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${your_apiKey}&units=metric`);
     let formatdata= await a.json();
     //console.log("formatdata",formatdata);
     
