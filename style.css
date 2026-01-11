@@ -1,0 +1,178 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+}
+body{
+    background-image: url('https://images.unsplash.com/photo-1579003593419-98f949b9398f?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8d2VhdGhlcnxlbnwwfHwwfHx8MA%3D%3D');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+.searchBar{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: black; */
+}
+.parentDiv{
+    width: 50%;
+    position: relative;
+}
+.inputfield{
+    /* border: 2px solid red; */
+    width: 100%;
+    border: 1px solid black;
+    border-radius: 25px;
+    /* border: none; */
+    outline: none;
+    padding: 8px;
+    color: black;
+}
+.parentDiv img{
+    position: absolute;
+    right: 8px;
+    border-radius: 50%;
+    top: 2px;
+}
+.parentDiv img:hover{
+    cursor: pointer;
+}
+.mainContainer{
+    height: 90vh;
+}
+.leftDiv{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.rightDiv{
+    width: 70%;
+    margin-right: 10px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.leftChild{
+     border: 2px solid rgb(40, 224, 16);
+    background-color: rgb(212, 212, 212,0.4);
+    width: 85%;
+    height: 42vh;
+    padding-left: 16px;
+    padding-top: 10px;
+    margin: auto;
+    border-radius: 15px;
+    backdrop-filter: blur(15px);
+}
+#city-name{
+    font-size: xx-large;
+}
+#city-temp{
+    font-size: x-large;
+}
+#coming{
+    font-size: x-large;
+}
+.rightrow{
+    height: 27vh;
+    /* border: 2px solid red; */
+    width: 100%;
+  
+}
+
+.extrametric{
+    background-color: rgb(212, 212, 212,0.4);
+      backdrop-filter: blur(15px);
+      padding:5% 3%;
+        justify-content: center;
+      width: fit-content;
+      border-radius: 10px;
+      align-items: center;
+}
+.rowTwoDiv{
+    background-color: rgb(212, 212, 212,0.4);
+      backdrop-filter: blur(15px);
+      width: 48%;
+      height: 85%;
+      border-radius: 10px;
+}
+.Today{
+    background-color: rgb(212, 212, 212,0.4);
+      backdrop-filter: blur(15px);
+      width: fit-content;
+      padding: 7px 25px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      align-items: center;
+      justify-content: center;      
+}
+@media only screen and (max-width:767px){
+    .rightDiv{
+        width: 100%;
+        height: 80%;
+    }
+    .leftDiv{
+       width: 100%;
+    height: 100%;
+    display: flex;
+    gap:15px;
+    flex-direction: column;
+    margin: 15px 0px;
+    }
+    .mainContainer{
+    height: 90vh;
+    flex-direction: column;
+    /* border: 2px solid red; */
+    }
+    .searchBar{
+        width: 100%;
+        border: 2px solid red;
+    }
+    .parentDiv{
+        width: 85%;
+        height: fit-content;
+        position: relative;
+    }
+    .rowone{
+    flex-wrap: wrap;
+    gap: 0px;
+    height: 100%;
+    width: 85%;
+    align-content: center;
+    margin: auto;
+    }
+    .rowTwo{ 
+        flex-direction: column;
+        height: 45vh;
+    }
+    .rowTwoDiv{
+      width: 95%;
+      height: 85%;
+    }
+    .rowThird{
+        width:85%;
+        margin: auto;
+    }   
+    .TodayParentDiv{
+        width: 100%;
+        margin: auto;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+}
+
+
+
+ 
+
